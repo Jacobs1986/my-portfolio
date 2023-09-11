@@ -1,0 +1,9 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This is a website that will show my work to potential clients and employers.",
+  "main": "index.js",
+  "repository": "https://github.com/Jacobs1986/my-portfolio.git",
+  "author": "Sean Jacobson <sean.jacobson86@gmail.com>",
+  "license": "MIT"
+}
