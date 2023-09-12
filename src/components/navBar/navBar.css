@@ -5,15 +5,50 @@
 
 /* Styling for the links inisde the navigation bar */
 .topNav a {
-    float: left;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    float: left;
 }
 
 /* Hover styling for the links */
 .topNav a:hover {
     background-color: lightgray;
+}
+
+/* Hide the button */
+.topNav .icon {
+    display: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    /* Hide the links */
+    .topNav a {
+        display: none;
+    }
+    /* show the icon */
+    .topNav .icon {
+        float: left;
+        display: block;
+    }
+}
+
+/* Media query for the responsive class */
+@media screen and (max-width: 600px) {
+    .topNav.responsive {
+        position: relative;
+    }
+    .topNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
