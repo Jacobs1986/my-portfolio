@@ -14,11 +14,17 @@ import HomePage from "./pages/home-page";
 import PortfolioPage from "./pages/portfolio-page";
 import ContactPage from "./pages/contact-page";
 
+// Components
+import NavBar from "./components/navBar/navBar";
+
 function App() {
     return (
         <>
             {/* Setup the routes */}
             <BrowserRouter>
+                {/* Navigation bar */}
+                <NavBar />
+                {/* Routes */}
                 <Routes>
                     {/* HomePage Route */}
                     <Route path='/' element={<HomePage />} />
