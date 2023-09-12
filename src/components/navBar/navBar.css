@@ -25,14 +25,14 @@
 
 /* Media queries */
 @media screen and (max-width: 600px) {
-    /* Hide the links */
-    .topNav a {
-        display: none;
-    }
     /* show the icon */
     .topNav .icon {
         float: left;
         display: block;
+    }
+    /* Hide the links */
+    .topNav a {
+        display: none;
     }
 }
 
