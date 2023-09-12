@@ -5,6 +5,10 @@ import "./navBar.css";
 
 export default function NavBar() {
     return (
-        <div>This is the navigation bar</div>
+        <div className="topNav">
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/contact">Contact</a>
+        </div>
     );
 };
