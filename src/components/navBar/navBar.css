@@ -27,7 +27,7 @@
 @media screen and (max-width: 600px) {
     /* show the icon */
     .topNav .icon {
-        float: left;
+        float: right;
         display: block;
     }
     /* Hide the links */

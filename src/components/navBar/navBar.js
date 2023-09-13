@@ -6,7 +6,8 @@ import "./navBar.css";
 
 export default function NavBar() {
     // Function for showing navbar links
-    const handleShowLinks = () => {
+    const handleShowLinks = (event) => {
+        event.preventDefault();
         // set the variable for myTopnav
         let x = document.getElementById("myTopnav");
         // Begin conditional
