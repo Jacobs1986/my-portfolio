@@ -3,8 +3,6 @@
     background-color: #f1f1f1;
     overflow: hidden;
     height: 0em;
-    animation-name: hideMenu;
-    animation-duration: 0.5s;
 }
 
 .navigationBar a {
@@ -33,15 +31,6 @@
     }
     to {
        height: 10em;
-    }
-}
-
-@keyframes hideMenu {
-    from {
-        height: 10em
-    }
-    to {
-       height: 0em;
     }
 }
 
