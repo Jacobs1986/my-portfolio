@@ -1,0 +1,31 @@
+.navigationBar {
+    width: auto;
+    height: auto;
+    position: relative;
+    background-color: #f1f1f1;
+    overflow: auto;
+}
+
+.navigationBar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigationBar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Tablet layout */
+@media screen and (min-width: 600px) {
+    .navigationBar a {
+        float: left;
+    }
+
+    .navigationToggle {
+        display: none;
+    }
+}
