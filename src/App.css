@@ -1,0 +1,8 @@
+/* Import layout.css */
+@import "./styles/layout.css";
+
+/* Set font fanily for the site */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
