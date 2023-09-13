@@ -1,9 +1,10 @@
 .navigationBar {
-    width: auto;
-    height: auto;
     position: relative;
     background-color: #f1f1f1;
-    overflow: auto;
+    overflow: hidden;
+    height: 0em;
+    animation-name: hideMenu;
+    animation-duration: 0.5s;
 }
 
 .navigationBar a {
@@ -19,8 +20,37 @@
     color: white;
 }
 
+/* Responsive */
+.navigationBar.responsive {
+    height: 10em;
+    animation-name: showMenu;
+    animation-duration: 0.5s;
+}
+
+@keyframes showMenu {
+    from {
+        height: 0em
+    }
+    to {
+       height: 10em;
+    }
+}
+
+@keyframes hideMenu {
+    from {
+        height: 10em
+    }
+    to {
+       height: 0em;
+    }
+}
+
 /* Tablet layout */
 @media screen and (min-width: 600px) {
+    .navigationBar, .navigationBar.responsive {
+        height: auto;
+        display: block;
+    }
     .navigationBar a {
         float: left;
     }
