@@ -15,7 +15,7 @@ import PortfolioPage from "./pages/portfolio-page";
 import ContactPage from "./pages/contact-page";
 
 // Components
-import NavBar from "./components/navBar/navBar";
+import NavBar from './components/navBar/navBar';
 
 function App() {
     return (
