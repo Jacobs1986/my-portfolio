@@ -5,6 +5,16 @@ import { FaCaretDown } from "react-icons/fa";
 // CSS File
 import "./navBar.css";
 
+// Function for showing the dropdown
+const handleShowDropDwn = () => {
+    var x = document.getElementById("myTopNav");
+    if (x.className === "topNav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topNav";
+    }
+}
+
 export default function NavBar() {
     return (
         <div>
@@ -27,7 +37,7 @@ export default function NavBar() {
                 </div>
                 {/* Contact */}
                 <a href="/contact">Contact</a>
-                <div className="icon">&#9776;</div>
+                <div className="icon" onClick={handleShowDropDwn}>&#9776;</div>
             </div>
         </div>
     );

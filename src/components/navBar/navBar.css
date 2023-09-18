@@ -73,3 +73,48 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Hide all of the links except for the Home and show the icon */
+@media screen and (max-width: 600px) {
+    .topNav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topNav .icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* Add responsive class for screens that are a max width of 600px */
+@media screen and (max-width: 600px) {
+    .topNav.responsive {
+        position: relative;
+    }
+
+    .topNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topNav.responsive .dropdown {
+        float: none;
+    }
+
+    .topNav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topNav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
