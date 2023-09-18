@@ -13,6 +13,7 @@ import './App.css'
 import HomePage from "./pages/home-page";
 import PortfolioPage from "./pages/portfolio-page";
 import ContactPage from "./pages/contact-page";
+import FeaturedPage from "./pages/featured-page";
 
 // Components
 import NavBar from './components/navBar/navBar';
@@ -30,6 +31,8 @@ function App() {
                     <Route path='/' element={<HomePage />} />
                     {/* PortfolioPage Route */}
                     <Route path='/portfolio' element={<PortfolioPage />} />
+                    {/* FeaturedPage Route */}
+                    <Route path="/featured" element={<FeaturedPage />} />
                     {/* ContactPage Route */}
                     <Route path='/contact' element={<ContactPage />} />
                 </Routes>
