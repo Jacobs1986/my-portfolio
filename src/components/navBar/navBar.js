@@ -3,7 +3,7 @@ import React from "react";
 import { FaCaretDown } from "react-icons/fa";
 
 // CSS File
-import "./navBar.css";
+import "./navBar2.css";
 
 // Function for showing the dropdown
 const handleShowDropDwn = () => {
@@ -18,6 +18,8 @@ const handleShowDropDwn = () => {
 export default function NavBar() {
     return (
         <div>
+            {/* Icon */}
+            <div className="icon" onClick={handleShowDropDwn}>&#9776;</div>
             {/* Navigation bar */}
             <div className="topNav" id="myTopNav">
                 {/* Home page Link */}
@@ -37,7 +39,6 @@ export default function NavBar() {
                 </div>
                 {/* Contact */}
                 <a href="/contact">Contact</a>
-                <div className="icon" onClick={handleShowDropDwn}>&#9776;</div>
             </div>
         </div>
     );
