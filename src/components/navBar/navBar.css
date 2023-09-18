@@ -5,7 +5,7 @@
 }
 
 /* Style the links inside the navigation bar */
-.topNav a {
+.topNav a, .icon {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -13,6 +13,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+/* Styling for the incon on regular screens */
+.topNav .icon {
+    display: none;
 }
 
 /* Dropdown container */

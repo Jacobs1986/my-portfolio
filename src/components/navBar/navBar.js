@@ -27,6 +27,7 @@ export default function NavBar() {
                 </div>
                 {/* Contact */}
                 <a href="/contact">Contact</a>
+                <div className="icon">&#9776;</div>
             </div>
         </div>
     );
